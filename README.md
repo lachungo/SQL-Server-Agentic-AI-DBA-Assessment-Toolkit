@@ -1,27 +1,32 @@
+# SQL Server Best Practices Compliance Report Package
 
-# SQL Server Agentic AI DBA Assessment Toolkit
+This package contains the PowerShell script and documentation for the SQL Server Best Practices Compliance report.
 
-## 🚀 Overview
-Enterprise-grade SQL Server assessment toolkit powered by AI-driven analysis.
+## Contents
+- `DBA_BestPractices_Compliance_Report_v1_1.ps1`
+- `README.md`
+- `RUN_COMMANDS.txt`
+- `PREREQUISITES.md`
+- `OUTPUTS.md`
+- `TROUBLESHOOTING.md`
 
-## 🔍 Key Features
-- Security vulnerability assessment
-- Performance diagnostics
-- DBA best practices validation
-- AI-driven insights & recommendations
+## What the report covers
+- Max server memory
+- Min server memory
+- MAXDOP
+- Cost threshold for parallelism
+- Optimize for ad hoc workloads
+- Backup compression default
+- TempDB data file count
+- Database state
+- PAGE_VERIFY
+- AUTO_CREATE_STATS
+- AUTO_UPDATE_STATS
+- AUTO_UPDATE_STATS_ASYNC review
+- Query Store enablement review
+- Recovery model review
+- DBCC CHECKDB recency
 
-## 🏗 Architecture
-- SQL Assessment Scripts
-- PowerShell Automation Layer
-- AI Analysis Engine
-- Reporting Framework
-
-## 📊 Sample Reports
-See `/reports` folder for generated outputs.
-
-## ⚙️ Setup Guide
-See `/docs/setup-guide.md`
-
-## 👤 Author
-Louis Achungo  
-Principal SQL Architect & Cloud DBA (Azure & AWS)
+## Output location
+- `C:\Temp\DBA_Agent\Reports`
+- `C:\Temp\DBA_Agent\Logs`
