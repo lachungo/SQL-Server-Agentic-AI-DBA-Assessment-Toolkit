@@ -1,34 +1,125 @@
 > ⚠️ **Disclaimer:** This toolkit is for demonstration purposes only and is not intended for unrestricted public production use. Private implementation and customization support is available.
 
-# SQL Server Best Practices Compliance Report Package
+# SQL-Server-Agentic-AI-DBA-Assessment-Toolkit
 
-This package contains the PowerShell script and documentation for the SQL Server Best Practices Compliance report.
+Enterprise-grade SQL Server assessment and automation toolkit designed to simulate an **Agentic AI DBA** for on-prem environments.
 
-## Contents
-- `DBA_BestPractices_Compliance_Report_v1_1.ps1`
-- `README.md`
-- `RUN_COMMANDS.txt`
-- `PREREQUISITES.md`
-- `OUTPUTS.md`
-- `TROUBLESHOOTING.md`
+---
 
-## What the report covers
-- Max server memory
-- Min server memory
-- MAXDOP
-- Cost threshold for parallelism
-- Optimize for ad hoc workloads
-- Backup compression default
-- TempDB data file count
-- Database state
-- PAGE_VERIFY
-- AUTO_CREATE_STATS
-- AUTO_UPDATE_STATS
-- AUTO_UPDATE_STATS_ASYNC review
-- Query Store enablement review
-- Recovery model review
+> ⚠️ **Disclaimer:**  
+This toolkit is intended for demonstration and controlled use only.  
+It is not designed for unrestricted public production deployment.  
+Private implementation and customization support is available.
+
+---
+
+## 🚀 Overview
+
+This project provides a structured, automated approach to assessing SQL Server environments across three critical domains:
+
+- **Operational Health & Performance**
+- **Configuration & Best Practices Compliance**
+- **Security & Vulnerability Exposure**
+
+The toolkit is built using PowerShell and leverages native SQL Server system views to generate **HTML-based reports** suitable for both technical teams and leadership review.
+
+---
+
+## 🧠 What This Toolkit Does
+
+This solution acts as a **lightweight Agentic AI DBA framework**, performing:
+
+- Automated data collection from SQL Server
+- Rule-based evaluation of system state
+- Risk classification and prioritization
+- Report generation with actionable recommendations
+- Optional automation and scheduling
+- Optional AI-ready integration layer
+
+---
+
+## 📊 Reports Included
+
+### 1. DBA Agent Technical Report
+
+**Purpose:**  
+Provides a deep operational and performance assessment of the SQL Server instance.
+
+**Focus Areas:**
+- Backup failures and gaps
+- SQL Agent job failures
 - DBCC CHECKDB recency
+- Wait statistics analysis
+- Blocking and performance indicators
+- Database file and log health
+- Actionable operational queue
 
-## Output location
-- `C:\Temp\DBA_Agent\Reports`
-- `C:\Temp\DBA_Agent\Logs`
+**Outcome:**  
+Identifies immediate operational risks and performance issues requiring DBA attention.
+
+---
+
+### 2. Best Practices Compliance Report
+
+**Purpose:**  
+Evaluates the SQL Server instance against commonly accepted DBA best practices.
+
+**Focus Areas:**
+- Max server memory configuration
+- MAXDOP and cost threshold for parallelism
+- Optimize for ad hoc workloads
+- TempDB configuration
+- Page verification settings
+- Statistics configuration
+- Query Store usage
+- Database integrity maintenance (DBCC)
+
+**Outcome:**  
+Highlights configuration gaps and areas where the system deviates from recommended standards.
+
+---
+
+### 3. Vulnerability Assessment Report
+
+**Purpose:**  
+Performs a security-focused assessment of SQL Server exposure and risk.
+
+**Focus Areas:**
+- `sa` account status
+- Sysadmin role membership
+- Authentication mode (Windows vs Mixed)
+- Surface area configuration (xp_cmdshell, OLE, CLR)
+- TRUSTWORTHY database settings
+- Guest user access
+- Orphaned users
+- Linked server exposure
+- Security scoring and risk classification
+
+**Outcome:**  
+Provides a prioritized view of security risks with supporting evidence and remediation steps.
+
+---
+
+## ⚙️ How It Works
+
+1. PowerShell scripts connect to SQL Server
+2. System views and metadata are queried
+3. Rules evaluate configuration and behavior
+4. Findings are categorized:
+   - Pass
+   - Review
+   - Fail
+5. HTML reports are generated
+6. Optional:
+   - Automation (scheduled execution)
+   - Email delivery
+   - AI narrative integration
+
+---
+
+## ▶️ How to Run
+
+See full instructions:
+
+```text
+automation/HOW_TO_RUN.md
