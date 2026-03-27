@@ -1,3 +1,5 @@
+> ⚠️ **Disclaimer:** This toolkit is for demonstration purposes only and is not intended for unrestricted public production use. Private implementation and customization support is available.
+
 # DBA Agent Technical Report Package
 
 This package contains the PowerShell script and documentation for the technical SQL Server DBA operational report.
