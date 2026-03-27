@@ -1,5 +1,3 @@
-> ⚠️ **Disclaimer:** This toolkit is for demonstration purposes only and is not intended for unrestricted public production use. Private implementation and customization support is available.
-
 # SQL-Server-Agentic-AI-DBA-Assessment-Toolkit
 
 Enterprise-grade SQL Server assessment and automation toolkit designed to simulate an **Agentic AI DBA** for on-prem environments.
