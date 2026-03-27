@@ -1,1 +1,28 @@
 
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.bak
+
+# Archives
+*.zip
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# PowerShell artifacts
+*.ps1xml
+
+# IDE / editor
+.vscode/
+
+# Local generated outputs
+Reports/
+Logs/
+Payloads/
+
+# Optional local Windows temp-style paths copied into repo by mistake
+C:/Temp/
