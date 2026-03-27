@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>DBA Agent Technical Report - localhost</title>
+    <style>
+        body { font-family: Segoe UI, Arial, sans-serif; margin: 20px; background: #ffffff; color: #222; }
+        h1 { color: #1f4e79; margin-bottom: 10px; }
+        h2, h3 { color: #2f75b5; margin-top: 24px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 12px; margin-bottom: 20px; font-size: 13px; }
+        th, td { border: 1px solid #d9d9d9; padding: 8px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; }
+        code, pre {
+            background-color: #f6f6f6;
+            border: 1px solid #e0e0e0;
+            padding: 8px;
+            display: block;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-size: 12px;
+        }
+        .meta { margin-bottom: 20px; }
+        .meta p { margin: 4px 0; }
+        .cards { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; margin-bottom: 18px; }
+        .card {
+            min-width: 170px;
+            padding: 14px;
+            border-radius: 10px;
+            background: #f8f9fb;
+            border: 1px solid #dde3ea;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .card .label { font-size: 12px; color: #555; margin-bottom: 6px; text-transform: uppercase; }
+        .card .value { font-size: 22px; font-weight: 600; color: #1f1f1f; }
+        .card .value.small { font-size: 14px; line-height: 1.3; }
+        .sev-critical { background: #fdeaea !important; border-color: #e6a8a8 !important; }
+        .sev-high { background: #fff2e6 !important; border-color: #efc08f !important; }
+        .sev-medium { background: #fff9e6 !important; border-color: #e2cf7a !important; }
+        .sev-low { background: #eef8ee !important; border-color: #9fd19f !important; }
+        .sev-info { background: #eef5fb !important; border-color: #a8c6e6 !important; }
+        .sev-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .action-item {
+            border: 1px solid #dde3ea;
+            border-radius: 10px;
+            padding: 14px;
+            margin-bottom: 14px;
+            background: #fcfcfd;
+        }
+        .action-header { margin-bottom: 10px; font-size: 14px; }
+        .action-category { font-weight: 700; color: #2f75b5; }
+        .empty { color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h1>DBA Agent Technical Report - localhost</h1>
+    <div class="meta">
+        <p><b>Generated:</b> 03/17/2026 23:20:14</p>
+        <p><b>Database:</b> DBA_Observability</p>
+        <p><b>Reports Folder:</b> C:\Temp\DBA_Agent\Reports</p>
+        <p><b>Log File:</b> C:\Temp\DBA_Agent\Logs\DBA_Agent_20260317_232014.log</p>
+        <p><b>Action Queue Written:</b> No</p>
+    </div>
+
+    <h2>Issue Dashboard</h2>
+<div class='cards'>
+    <div class='card sev-critical'><div class='label'>Critical</div><div class='value'>1</div></div>
+    <div class='card sev-high'><div class='label'>High</div><div class='value'>5</div></div>
+    <div class='card sev-medium'><div class='label'>Medium</div><div class='value'>1</div></div>
+    <div class='card sev-low'><div class='label'>Low</div><div class='value'>23</div></div>
+    <div class='card'><div class='label'>Backup Exceptions</div><div class='value'>3</div></div>
+    <div class='card'><div class='label'>Job Failures</div><div class='value'>2</div></div>
+    <div class='card'><div class='label'>Blocking</div><div class='value'>0</div></div>
+    <div class='card'><div class='label'>Regressions</div><div class='value'>0</div></div>
+</div>
+    <h2>Technical Summary</h2><ul><li>Detected 6 immediate attention item(s) across backup, job, blocking, integrity, or space categories.</li><li>Backup compliance exceptions detected for 3 database(s).</li><li>Detected 2 failed SQL Agent job(s) in the last 24 hours.</li></ul>
+    <h2>Immediate DBA Attention Required</h2><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-critical'>Critical</span> <span class='action-category'>Backup Compliance Exception</span></div>
+    <div><b>Target:</b> DBA_Observability</div>
+    <div><b>Detail:</b> Backup currency is outside threshold or missing.</div>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>Backup Compliance Exception</span></div>
+    <div><b>Target:</b> DBA</div>
+    <div><b>Detail:</b> Backup currency is outside threshold or missing.</div>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>Backup Compliance Exception</span></div>
+    <div><b>Target:</b> Louis-AdventureWorksDB</div>
+    <div><b>Detail:</b> Backup currency is outside threshold or missing.</div>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>DBCC CHECKDB</span></div>
+    <div><b>Target:</b> DBA_Observability</div>
+    <div><b>Detail:</b> DBCC last known good is 1900-01-01 00:00:00.000.</div>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>SQL Agent Failure</span></div>
+    <div><b>Target:</b> LabMigrate - Nightly Stats</div>
+    <div><b>Detail:</b> Recent job failure detected.</div>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>SQL Agent Failure</span></div>
+    <div><b>Target:</b> Monitoring-WhoIsActive</div>
+    <div><b>Detail:</b> Recent job failure detected.</div>
+</div>
+    <h2>Server Information</h2>
+    <h2>Configuration Snapshot</h2><table><thead><tr><th>name</th><th>value_in_use</th></tr></thead><tbody><tr><td>backup compression default</td><td>0</td></tr><tr><td>clr enabled</td><td>0</td></tr><tr><td>cost threshold for parallelism</td><td>5</td></tr><tr><td>max degree of parallelism</td><td>8</td></tr><tr><td>max server memory (MB)</td><td>2147483647</td></tr><tr><td>min server memory (MB)</td><td>16</td></tr><tr><td>optimize for ad hoc workloads</td><td>0</td></tr></tbody></table>
+    <h2>Instance Health Snapshot</h2><p class='empty'>No prior observability health snapshot rows returned.</p>
+
+    <h2>Operational Analysis</h2>
+    2026-03-17 23:20:14 [WARN] LLM endpoint or API key not configured. Skipping operational analysis. <p class='empty'>Operational analysis skipped because OPENAI_ENDPOINT and/or OPENAI_API_KEY are not configured.</p>
+
+    <h2>Database State Summary</h2><table><thead><tr><th>Severity</th><th>name</th><th>state_desc</th><th>recovery_model_desc</th><th>user_access_desc</th><th>page_verify_option_desc</th><th>is_auto_create_stats_on</th><th>is_auto_update_stats_on</th><th>is_auto_update_stats_async_on</th><th>is_query_store_on</th></tr></thead><tbody><tr><td>Low</td><td>DBA</td><td>ONLINE</td><td>FULL</td><td>MULTI_USER</td><td>CHECKSUM</td><td></td><td></td><td>False</td><td></td></tr><tr><td>Low</td><td>DBA_Observability</td><td>ONLINE</td><td>FULL</td><td>MULTI_USER</td><td>CHECKSUM</td><td></td><td></td><td>False</td><td></td></tr><tr><td>Low</td><td>Louis-AdventureWorksDB</td><td>ONLINE</td><td>FULL</td><td>MULTI_USER</td><td>CHECKSUM</td><td></td><td></td><td>False</td><td></td></tr><tr><td>Low</td><td>master</td><td>ONLINE</td><td>SIMPLE</td><td>MULTI_USER</td><td>CHECKSUM</td><td></td><td></td><td>False</td><td></td></tr><tr><td>Low</td><td>model</td><td>ONLINE</td><td>FULL</td><td>MULTI_USER</td><td>CHECKSUM</td><td></td><td></td><td>False</td><td></td></tr><tr><td>Low</td><td>msdb</td><td>ONLINE</td><td>SIMPLE</td><td>MULTI_USER</td><td>CHECKSUM</td><td></td><td></td><td>False</td><td></td></tr><tr><td>Low</td><td>tempdb</td><td>ONLINE</td><td>SIMPLE</td><td>MULTI_USER</td><td>CHECKSUM</td><td></td><td></td><td>False</td><td></td></tr></tbody></table>
+    <h2>DBCC CHECKDB Status</h2><table><thead><tr><th>Severity</th><th>DatabaseName</th><th>LastKnownGood</th></tr></thead><tbody><tr><td>High</td><td>DBA_Observability</td><td>1900-01-01 00:00:00.000</td></tr></tbody></table>
+    <h2>Backup Compliance Exceptions</h2><table><thead><tr><th>Severity</th><th>DatabaseName</th><th>RecoveryModel</th><th>LastFullBackup</th><th>LastDiffBackup</th><th>LastLogBackup</th></tr></thead><tbody><tr><td>High</td><td>DBA</td><td>FULL</td><td>2026-01-04 22:07:36</td><td>2026-03-14 20:01:02</td><td>2026-03-14 20:20:01</td></tr><tr><td>Critical</td><td>DBA_Observability</td><td>FULL</td><td></td><td></td><td></td></tr><tr><td>High</td><td>Louis-AdventureWorksDB</td><td>FULL</td><td>2026-01-04 22:13:06</td><td>2026-03-14 20:01:55</td><td>2026-03-14 20:20:01</td></tr></tbody></table>
+    <h2>SQL Agent Job Failures</h2><table><thead><tr><th>Severity</th><th>JobName</th><th>LastRunDateTime</th><th>LastRunOutcome</th><th>Message</th></tr></thead><tbody><tr><td>High</td><td>Monitoring-WhoIsActive</td><td>2026-03-17 21:28:30</td><td>Failed</td><td>The job failed.  The Job was invoked by Schedule 12 (Every 30 seconds).  The last step to run was step 1 (Monitoring-WhoIsActive).</td></tr><tr><td>High</td><td>LabMigrate - Nightly Stats</td><td>2026-01-05 01:00:00</td><td>Failed</td><td>The job failed.  The Job was invoked by Schedule 17 (LabMigrate - Daily 1AM).  The last step to run was step 1 (Update Statistics).</td></tr></tbody></table>
+    <h2>Blocking and Concurrency Snapshot</h2><p class='empty'>No active blocking captured.</p>
+    <h2>Wait Statistics Analysis</h2><table><thead><tr><th>Severity</th><th>WaitType</th><th>WaitTimeMs</th><th>SignalWaitTimeMs</th></tr></thead><tbody><tr><td>Low</td><td>SOS_WORK_DISPATCHER</td><td>11633405</td><td>487</td></tr><tr><td>Low</td><td>LOGMGR_QUEUE</td><td>736674</td><td>62</td></tr><tr><td>Low</td><td>DIRTY_PAGE_POLL</td><td>368290</td><td>27</td></tr><tr><td>Low</td><td>HADR_FILESTREAM_IOMGR_IOCOMPLETION</td><td>367395</td><td>44</td></tr><tr><td>Low</td><td>REQUEST_FOR_DEADLOCK_SEARCH</td><td>365537</td><td>365537</td></tr><tr><td>Low</td><td>SQLTRACE_INCREMENTAL_FLUSH_SLEEP</td><td>364759</td><td>0</td></tr><tr><td>Low</td><td>CHECKPOINT_QUEUE</td><td>362936</td><td>20</td></tr><tr><td>Low</td><td>QDS_PERSIST_TASK_MAIN_LOOP_SLEEP</td><td>360049</td><td>0</td></tr><tr><td>Low</td><td>SP_SERVER_DIAGNOSTICS_SLEEP</td><td>300011</td><td>300011</td></tr><tr><td>Low</td><td>BROKER_EVENTHANDLER</td><td>187046</td><td>0</td></tr><tr><td>Low</td><td>BROKER_TO_FLUSH</td><td>184579</td><td>5</td></tr><tr><td>Low</td><td>BROKER_TASK_STOP</td><td>80049</td><td>0</td></tr><tr><td>Medium</td><td>LCK_M_X</td><td>1414</td><td>0</td></tr><tr><td>Low</td><td>MEMORY_ALLOCATION_EXT</td><td>1077</td><td>0</td></tr><tr><td>Low</td><td>PWAIT_ALL_COMPONENTS_INITIALIZED</td><td>1074</td><td>0</td></tr></tbody></table>
+    <h2>File and Log Space Usage</h2><table><thead><tr><th>Severity</th><th>DatabaseName</th><th>LogicalFileName</th><th>type_desc</th><th>FileSizeMB</th><th>SpaceUsedMB</th><th>FreeMB</th><th>FreePct</th></tr></thead><tbody><tr><td>Low</td><td>DBA_Observability</td><td>DBA_Observability_log</td><td>LOG</td><td>8.00</td><td>0.73</td><td>7.27</td><td>90.88</td></tr><tr><td>Low</td><td>DBA_Observability</td><td>DBA_Observability</td><td>ROWS</td><td>8.00</td><td>3.19</td><td>4.81</td><td>60.13</td></tr></tbody></table>
+    <h2>Query Store Top Regressions</h2><p class='empty'>No Query Store regressions returned.</p>
+    <h2>Index Maintenance Candidates</h2><p class='empty'>No fragmentation candidates detected.</p>
+    <h2>Operational Action Queue</h2><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-critical'>Critical</span> <span class='action-category'>Backup</span></div>
+    <div><b>Target:</b> DBA_Observability</div>
+    <div><b>Recommendation:</b> Validate backup chain and confirm recent log backup execution.</div>
+    <div><b>T-SQL:</b></div>
+    <pre>SELECT database_name, type, backup_start_date, backup_finish_date<br/>FROM msdb.dbo.backupset<br/>WHERE database_name = 'DBA_Observability'<br/>ORDER BY backup_finish_date DESC;</pre>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>Backup</span></div>
+    <div><b>Target:</b> DBA</div>
+    <div><b>Recommendation:</b> Validate backup chain and confirm recent log backup execution.</div>
+    <div><b>T-SQL:</b></div>
+    <pre>SELECT database_name, type, backup_start_date, backup_finish_date<br/>FROM msdb.dbo.backupset<br/>WHERE database_name = 'DBA'<br/>ORDER BY backup_finish_date DESC;</pre>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>Backup</span></div>
+    <div><b>Target:</b> Louis-AdventureWorksDB</div>
+    <div><b>Recommendation:</b> Validate backup chain and confirm recent log backup execution.</div>
+    <div><b>T-SQL:</b></div>
+    <pre>SELECT database_name, type, backup_start_date, backup_finish_date<br/>FROM msdb.dbo.backupset<br/>WHERE database_name = 'Louis-AdventureWorksDB'<br/>ORDER BY backup_finish_date DESC;</pre>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>SQL Agent</span></div>
+    <div><b>Target:</b> LabMigrate - Nightly Stats</div>
+    <div><b>Recommendation:</b> Review recent job history, dependent objects, and downstream impact.</div>
+    <div><b>T-SQL:</b></div>
+    <pre>EXEC msdb.dbo.sp_help_jobhistory @job_name = N'LabMigrate - Nightly Stats';</pre>
+</div><div class='action-item'>
+    <div class='action-header'><span class='sev-badge sev-high'>High</span> <span class='action-category'>SQL Agent</span></div>
+    <div><b>Target:</b> Monitoring-WhoIsActive</div>
+    <div><b>Recommendation:</b> Review recent job history, dependent objects, and downstream impact.</div>
+    <div><b>T-SQL:</b></div>
+    <pre>EXEC msdb.dbo.sp_help_jobhistory @job_name = N'Monitoring-WhoIsActive';</pre>
+</div>
+</body>
+</html>
