@@ -1,3 +1,5 @@
+> ⚠️ **Disclaimer:** This toolkit is for demonstration purposes only and is not intended for unrestricted public production use. Private implementation and customization support is available.
+
 # SQL Server Best Practices Compliance Report Package
 
 This package contains the PowerShell script and documentation for the SQL Server Best Practices Compliance report.
