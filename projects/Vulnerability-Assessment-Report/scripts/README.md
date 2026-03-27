@@ -1,9 +1,11 @@
-# SQL Server Vulnerability Assessment Report Package
+> ⚠️ **Disclaimer:** This toolkit is for demonstration purposes only and is not intended for unrestricted public production use. Private implementation and customization support is available.
 
-This package contains the PowerShell script and documentation for the SQL Server vulnerability assessment report.
+# SQL Server Best Practices Compliance Report Package
+
+This package contains the PowerShell script and documentation for the SQL Server Best Practices Compliance report.
 
 ## Contents
-- `DBA_Vulnerability_Assessment_Report_v1_3.ps1`
+- `DBA_BestPractices_Compliance_Report_v1_1.ps1`
 - `README.md`
 - `RUN_COMMANDS.txt`
 - `PREREQUISITES.md`
@@ -11,16 +13,22 @@ This package contains the PowerShell script and documentation for the SQL Server
 - `TROUBLESHOOTING.md`
 
 ## What the report covers
-- `sa` account status
-- Sysadmin membership review
-- Authentication mode review
-- `xp_cmdshell`
-- Ole Automation Procedures
-- CLR enablement review
-- TRUSTWORTHY databases
-- Linked servers
-- Guest user exposure
-- Orphaned users
-- Security score
-- Top priority remediation
-- Detail evidence tables
+- Max server memory
+- Min server memory
+- MAXDOP
+- Cost threshold for parallelism
+- Optimize for ad hoc workloads
+- Backup compression default
+- TempDB data file count
+- Database state
+- PAGE_VERIFY
+- AUTO_CREATE_STATS
+- AUTO_UPDATE_STATS
+- AUTO_UPDATE_STATS_ASYNC review
+- Query Store enablement review
+- Recovery model review
+- DBCC CHECKDB recency
+
+## Output location
+- `C:\Temp\DBA_Agent\Reports`
+- `C:\Temp\DBA_Agent\Logs`
