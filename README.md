@@ -1,3 +1,5 @@
+![SQL Server Agentic AI DBA Toolkit](./banner.png)
+
 # SQL-Server-Agentic-AI-DBA-Assessment-Toolkit
 
 Enterprise-grade SQL Server assessment and automation toolkit designed to simulate an **Agentic AI DBA** for on-prem environments.
